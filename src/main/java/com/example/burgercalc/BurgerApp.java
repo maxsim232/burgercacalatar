@@ -30,13 +30,13 @@ public class BurgerApp extends Application {
 
 
 
-        Scene scene = new Scene(loader.load(), 320, 400);
+        Scene scene = new Scene(loader.load(), 380, 550);
 
 
 
         scene.getStylesheets().add(
 
-               BurgerApp.class.getResource("style.css").toExternalForm()
+                BurgerApp.class.getResource("style.css").toExternalForm()
 
         );
 
@@ -44,9 +44,17 @@ public class BurgerApp extends Application {
 
         stage.setTitle("Burger Calculator");
 
-        stage.setMinWidth(280);
 
-        stage.setMinHeight(400);
+
+        stage.setWidth(400);
+
+        stage.setHeight(600);
+
+
+
+        stage.setMinWidth(380);
+
+        stage.setMinHeight(550);
 
 
 

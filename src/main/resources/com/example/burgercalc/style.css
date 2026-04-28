@@ -1,9 +1,16 @@
 .background {
+-fx-background-image: url("burger.jpg");
+-fx-background-size :(20);
+-fx-background-position : center;
 
     -fx-background-color: linear-gradient(to bottom right, #1a1a1a, #333333);
 
 }
-
+.logo{
+-fx-logo-image :url("logo.png");
+-fx-logo-size :(10);
+-fx-logo-position : center;
+}
 
 
 .round-button {
