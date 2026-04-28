@@ -1,11 +1,18 @@
 package com.example.burgercalc;
 
+
+
 import javafx.application.Application;
+
 import javafx.fxml.FXMLLoader;
+
 import javafx.scene.Scene;
+
 import javafx.stage.Stage;
 
-public class PizzaApp extends Application {
+
+
+public class BurgerApp extends Application {
 
 
 
@@ -17,21 +24,19 @@ public class PizzaApp extends Application {
 
         FXMLLoader loader = new FXMLLoader(
 
-                PizzaApp.class.getResource("burger-view.fxml")
+                BurgerApp.class.getResource("burger-view.fxml")
 
         );
 
 
 
-        Scene scene = new Scene(loader.load(), 320, 320);
-
-
+        Scene scene = new Scene(loader.load(), 320, 400);
 
 
 
         scene.getStylesheets().add(
 
-                PizzaApp.class.getResource("style.css").toExternalForm()
+               BurgerApp.class.getResource("style.css").toExternalForm()
 
         );
 
@@ -41,7 +46,7 @@ public class PizzaApp extends Application {
 
         stage.setMinWidth(280);
 
-        stage.setMinHeight(320);
+        stage.setMinHeight(400);
 
 
 

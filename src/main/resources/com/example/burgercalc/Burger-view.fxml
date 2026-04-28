@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
+
 <?import javafx.scene.layout.*?>
+
 <StackPane xmlns:fx="http://javafx.com/fxml"
+
            fx:controller="com.example.burgercalc.BurgerController"
-           stylesheets="@style.css"
+
            styleClass="background">
+
     <VBox alignment="CENTER" spacing="10.0">
-        <Label text=" Burger Calculator" styleClass="title"/>
+
+        <Label text="🍔 Burger Calculator" styleClass="title"/>
+
         <Label text="Бургер №1:"/>
-        <TextField fx:id="weightField1" promptText="Вага котлети (г)"/>
+
+        <TextField fx:id="weightField1" promptText="Вага (г)"/>
+
         <TextField fx:id="priceField1" promptText="Ціна (грн)"/>
-        <Label text="Бургер №2:"/>
-        <TextField fx:id="weightField2" promptText="Вага котлети (г)"/>
+
+        <TextField fx:id="quantityField1" promptText="Кількість"/>
+
+        <TextField fx:id="sizeField1" promptText="Розмір (см)"/><Label text="Бургер №2:"/>
+
+        <TextField fx:id="weightField2" promptText="Вага (г)"/>
+
         <TextField fx:id="priceField2" promptText="Ціна (грн)"/>
+
+        <TextField fx:id="quantityField2" promptText="Кількість"/>
+
+        <TextField fx:id="sizeField2" promptText="Розмір (см)"/>
+
         <Button text="Порівняти" onAction="#calculate" styleClass="round-button"/>
+
         <Label fx:id="resultLabel" text=" "/>
+
     </VBox>
+
 </StackPane>
